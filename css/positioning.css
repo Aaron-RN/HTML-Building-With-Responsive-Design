@@ -14,6 +14,7 @@
 .flex-container{
     display: flex;
 }
+.flex-container div{margin-left: 10px;}
 .flex-end{
   justify-content:flex-end;
 }
