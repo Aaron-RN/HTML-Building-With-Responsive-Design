@@ -1,7 +1,7 @@
 .block{
     display: block;
 }
-.static{
+.position-static{
     position: static;
 }
 .inline-block{
@@ -11,6 +11,7 @@
 .position-absolute{
     position: absolute;
 }
+.position-relative{position: relative;}
 .flex-container{
     display: flex;
 }
@@ -35,6 +36,7 @@
 .flex-row{
     flex-direction: row;
 }
+.flex-1{flex: 1;}
 .flexgrow-0{
     flex-grow: 0;
 }
@@ -62,7 +64,7 @@
 .vert-align-top{
     vertical-align: top;
 }
-.vert-align-middle{
+.vert-align-middle > *{
     vertical-align: middle;
 }
 .float-l{

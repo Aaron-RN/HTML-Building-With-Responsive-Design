@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/056d9f1094.js"></script>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/DropBox.css">
@@ -10,10 +11,15 @@
         <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
         <title>Responsive Design, Abner and Aaron</title>
     </head>
-    <body>
+    <body class="example">
         <header>
             <nav>
-                <div class="navBlack font-Lato flex-container alignitems-center bold-600 size-14">
+                <div>
+                <div id="Logo" class="float-l">
+                    <figure><img src="images/tnw-logo.svg" alt="The next web (TNW) Logo" style="display:inline;"></figure>
+                </div> 
+                
+                <div class="navBlack font-Lato flex-container alignitems-center bold-600 size-13">
                     <a href="#" class="highlight">News</a>
                     <div href="#" class="dropdown">
                         <a href="#">Events ▾</a>
@@ -39,8 +45,13 @@
                     <a href="#">Plugged</a>
                     <a href="#">Fundamentals</a>
                     <a href="#">Work 2030</a>
+                    <div class="flex-container" style="margin-left: auto">
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        <button id="navBars"><i class="fas fa-bars"></i></button>
+                    </div>
                 </div>
-                <a href="#" class="yellowTopBar"><div class="yellowTopBar"><div class="yellowTopBar font-Lato size-14 table-cell">It's Pride Week in Amsterdam <img src="images/pride-logo.svg" style="height: 10%;"> Don't miss our events on diversity &amp; inclusion →</div></div></a>
+                </div>
+                <a href="#"><div class="yellowTopBar"><div class="font-Lato size-13">It's Pride Week in Amsterdam <img src="images/pride-logo.svg" class="img-tiny" alt="rainbow flag"> Don't miss our events on diversity &amp; inclusion →</div></div></a>
             </nav>
         </header>
     </body>
