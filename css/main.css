@@ -106,11 +106,9 @@ h4{
 a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;text-align: left;}
 
 #Logo{
-    vertical-align:middle;
-    height: 100%;
-    width: 150px;
+    padding: 20px;
+    width: 108px;
     background-image: linear-gradient(to bottom right, hotpink, red);
-    margin: auto;
     text-align: center;
 }
 
@@ -119,10 +117,13 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
 @media screen and (max-width: 600px), (min-width: 600px) {
     .example {background: green;}
     
+    #Logo{height: 44px;}
+    
+    .navLinks {width: calc(100% - 108px);}
     .navBlack{display: none;}
     .navBlack a{display: none;}
     .navWhite a{display: none;}
-    .navWhite{height: 45px;}
+    .navWhite{height: 100%;}
     .navWhite{color: #888;background-color: whitesmoke;padding: 8px 10px 8px 10px;}
     
     #navBars{display: block;}
@@ -132,6 +133,12 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
 @media only screen and (min-width: 768px) {
     .example {background: blue;}
     
+    #Logo{height: 85px;line-height: 60px;}
+    
+    .navWhite{height: 60%;}
+    .navBlack{height: 40%;}
+    
+    .navLinks {width: calc(100% - 108px);}
     .navBlack{display: block;}
     .navBlack a{display: block;}
     .navWhite a{display: block;}
@@ -150,8 +157,13 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
     .example {background: pink;}
+    
+    .navLinks {width: 100%;}
     #Logo{display: none;}
-} 
+}
+
+#navBars{padding: 0 15px 0 15px;font-size: 18px;color: orangered;border-left: 1px lightgray solid;}
+#searchBtn{padding: 0 15px 0 15px;font-size: 18px;color: gray;border-left: 1px lightgray solid;}
 
 
 nav [class*="col"]{
