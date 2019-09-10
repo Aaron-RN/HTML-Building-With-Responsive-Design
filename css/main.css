@@ -70,37 +70,30 @@ ul li:last-of-type {margin-right: 0;}
 
 h1{
     display: inline;
-    padding: 2px 4px 2px 4px;
     font-weight: 900;
     font-size: 2.75em;
     font-family: 'Catamaran', sans-serif;
 }
 h2{
     display: inline;
-    padding: 2px 4px 2px 4px;
     font-weight: 800;
     font-size: 2.375em;
 }
 h3{
     display: inline;
-    padding: 2px 4px 2px 4px;
     font-weight: 700;
     font-size: 2em;
 }
 .header3{
     display: inline;
-    padding: 2px 4px 2px 4px;
     font-weight: 800;
     font-size: 2em;
 }
 h4{
     display: inline;
-    padding: 2px 4px 2px 4px;
     font-weight: 600;
     font-size: 1.625em;
 }
-
-
 
 
 a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;text-align: left;}
@@ -111,7 +104,56 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
     background-image: linear-gradient(to bottom right, hotpink, red);
     text-align: center;
 }
-
+.logo-cover{
+    background-image: linear-gradient(to bottom right, #ff4d4d, rgba(0,0,0,0));
+/*    background-image: linear-gradient(to bottom right, #ff9999, #ff4d4d, rgba(0,0,0,0));*/
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.cover-bg{
+    background-image: linear-gradient(rgba(0,0,0,0), #000);
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.z-2{z-index: 3;}
+.main-article-section{height: 75vh;max-height: 560px;}
+.main-article{
+    position: relative;
+    background: #000 url("../images/iphone11-796x419.jpg") no-repeat 50%;
+    background-size: cover;
+    width: 65%;
+    height: 100%;
+    min-height: 30vh;
+}
+.main-article-header{font-size: 3.5vw;padding-right: 60px;display: block;font-family: 'Roboto', sans-serif;}
+.article-by-line{font-size: 14px;color: #AAA;}
+.sub-article-section{width: 35%;}
+.sub-article-2{
+    position: relative;
+    background: #000 url("../images/Apple-Watch-Series-5-cases-2-796x419.jpg") no-repeat 50%;
+    background-size: cover;
+    height: 50%;
+    min-height: 30vh;
+    margin: 0 0 5px 10px;
+}
+.sub-article-3{
+    position: relative;
+    background: #000 url("../images/iPad-796x418.jpg") no-repeat 50%;
+    background-size: cover;
+    height: 50%;
+    min-height: 30vh;
+    margin: 5px 0 0 10px;
+}
+.sub-article-header{font-size: 160%;padding-right: 10px;display: block;font-family: 'Roboto', sans-serif;}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px), (min-width: 600px) {
@@ -127,6 +169,15 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
     .navWhite{color: #888;background-color: whitesmoke;padding: 0px 0px 0px 10px;}
     
     #navBars{display: block;}
+    
+    .main-article-section{height: auto;flex-direction: column;}
+    .main-article{width: 100%;}
+    .sub-article-section{width: 100%;}
+    .sub-article-2{margin: 5px 0 5px 0;}
+    .sub-article-3{margin: 0;}
+    .sub-article-header{font-size: 110%;}
+    .logo-cover{display: none;}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -152,6 +203,13 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
     
     #navBars{display: none;}
     
+    .main-article-section{height: 63vh;flex-direction: row;}
+    .main-article{width: 65%;}
+    .sub-article-section{width: 35%;}
+    .sub-article-2{margin: 0 0 5px 10px;}
+    .sub-article-3{margin: 5px 0 0 10px;}
+    .sub-article-header{font-size: 120%;}
+    .logo-cover{display: none;}
 } 
 
 /* Large devices (laptops/desktops, 1024px and up) */
@@ -160,6 +218,13 @@ a .yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;t
     
     #navLinks {width: 100%;height: 80px;}
     #Logo{display: none;}
+    
+    .main-article-section{height: 75vh;flex-direction: row;}
+    .main-article{width: 65%;}
+    .sub-article-section{width: 35%;}
+    .sub-article-header{font-size: 160%;}
+    .logo-cover{display: block;}
+
 }
 
 #navLinks{overflow: visible;}
@@ -219,7 +284,9 @@ div:hover, header:hover, footer:hover, article:hover{
 .col-5-7{
     width: 72.42%;
 }
-
+.col-5-8{
+    width: 62.5%;
+}
 .col-55{
     width: 58%;
 }
@@ -325,6 +392,7 @@ input:-ms-input-placeholder{color: white;}
 .height-800{min-height: 800px;}
 
 .text-white{color:white;}
+.text-mute{color:#AAA;}
 .text-gray-1{color:#EEE;}
 .text-gray-2{color:#DDD;}
 .text-gray-3{color:#CCC;}
