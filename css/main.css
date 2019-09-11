@@ -130,7 +130,7 @@ h4{
     min-height: 30vh;
 }
 .main-article-header{font-size: 3.5vw;padding-right: 60px;display: block;font-family: 'Roboto Condensed', sans-serif;}
-.article-by-line{font-size: 14px;color: #AAA;}
+.article-by-line{font-size: 14px;color: #AAA;padding: 5px 0 8px 0;}
 .sub-article-section{width: 35%;}
 .sub-article-2{
     position: relative;
@@ -175,6 +175,8 @@ h4{
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px), (min-width: 600px) {
     .example {background: green;}
+    .d-none-small{display: none;}
+    .d-none-med{display: inline;}
     
     #Logo{height: 44px;}
     
@@ -206,6 +208,8 @@ h4{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .example {background: blue;}
+    .d-none-small{display: inline;}
+    .d-none-med{display: none;}
     
     #Logo{height: 85px;line-height: 60px;}
     
@@ -247,7 +251,9 @@ h4{
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
     .example {background: pink;}
-    
+    .d-none-small{display: inline;}
+    .d-none-med{display: inline;}
+
     #navLinks {width: 100%;height: 80px;}
     #Logo{display: none;}
     
