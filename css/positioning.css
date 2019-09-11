@@ -285,3 +285,25 @@
 .margin-b-45{
     margin-bottom: 45px;
 }
+
+.margin-vw{margin: 0 1vw 0 1vw}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px), (min-width: 600px) {
+    .margin-vw{margin: 0 1vw 0 1vw}
+    .pad-25{padding: 5px;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .margin-vw{margin: 0 1vw 0 1vw}
+    .pad-25{padding: 5px;}
+
+} 
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .margin-vw{margin: 0 calc(2em + 1vw) 0 calc(2em + 1vw);}
+    .pad-25{padding: 25px;}
+
+}
