@@ -130,7 +130,7 @@ h4{
     min-height: 30vh;
 }
 .main-article-header{font-size: 3.5vw;padding-right: 60px;display: block;font-family: 'Roboto Condensed', sans-serif;}
-.article-by-line{font-size: 14px;color: #AAA;padding: 5px 0 8px 0;}
+.article-by-line{font-size: 14px;color: #AAA;padding: 5px 0 4px 0;}
 .sub-article-section{width: 35%;}
 .sub-article-2{
     position: relative;
