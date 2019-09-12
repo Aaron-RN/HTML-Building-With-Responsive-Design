@@ -36,9 +36,9 @@ strong{font-weight: bold;}
 .italic{font-style: italic;}
 
 .size-6{font-size: 0.375em;}
-.size-8{font-size: 0.5em;}
-.size-10{font-size: 0.625em;}
-.size-12{font-size: 0.75em;}
+.size-8{font-size: 0.5em!important;}
+.size-10{font-size: 0.625em!important;}
+.size-12{font-size: 0.75em!important;}
 .size-13{font-size: 0.8125em;}
 .size-14{font-size: 0.875em;}
 .size-16{font-size: 1em;}
@@ -179,7 +179,18 @@ h4{
 .event-bg-3{background: #000 url("../images/AppleSpecialEvent/iPhone-11-pricing-513x270.jpg") no-repeat 50%;background-size: cover;}
 .event-bg-4{background: #000 url("../images/AppleSpecialEvent/iphone11-513x270.jpg") no-repeat 50%;background-size: cover;}
 
+/*FUNDING SECTION*/
+.funding-block{display: flex;flex-wrap: wrap;justify-content: space-between; margin-top: 20px;}
+.funding-block-w{width: 20vw;max-width: 270px;min-width: 220px;margin-bottom: 2vw;overflow: hidden;}
+.funding-img{width: 60px;position: absolute;left: 10px;bottom: 18px;}
+.funding-title{background-color: #f42;padding: 12px;font-size: 10px!important;color: white;padding-left: 80px;font-family: 'Poppins', sans-serif;font-weight: 900;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.funding-info{background-color: rgba(255,68,34,.08);padding: 10px;padding-left: 80px;color: #000;}
+.funding-invest{border-bottom: rgba(255,68,34,.08) solid 2px;padding: 16px;font-family: 'Saira', sans-serif;font-size: 14px;}
+.funding-invest a{color: #6f6f6f;}
+.funding-invest:nth-child(1){margin-bottom: 122px;}
 
+
+/*FOOTER SECTION*/
 .footer-links{text-align: center;background-color: #1a1a1a;margin: auto;padding: 30px;text-transform: uppercase;}
 .footer-links ul{list-style-type: none;margin-top: 30px;}
 .footer-links ul li{display: inline-block;color: #AAA;font-size: 12px;font-family: 'Roboto Condensed', sans-serif;padding: 5px;}
@@ -196,7 +207,9 @@ h4{
 @media screen and (max-width: 600px), (min-width: 600px) {
     .example {background: green;}
     .d-none-small{display: none;}
+    .d-none-small-b{display: none;}
     .d-none-med{display: inline;}
+    .d-show-large-b{display: none;}
     
     #Logo{height: 44px;}
     
@@ -223,6 +236,9 @@ h4{
     .news-article-title{font-size: 14px!important;}
     .aside-title{max-width: 80%;}
 
+    .funding-block{justify-content: flex-start;}
+    .funding-block-w{width: 93.5vw;max-width: none}    
+    
     .new-line-mobile{display: block;}
 }
 
@@ -230,7 +246,9 @@ h4{
 @media only screen and (min-width: 768px) {
     .example {background: dodgerblue;}
     .d-none-small{display: inline;}
+    .d-none-small-b{display: block;}
     .d-none-med{display: none;}
+    .d-show-large-b{display: none;}
     
     #Logo{height: 85px;line-height: 60px;}
     
@@ -264,6 +282,9 @@ h4{
     .article-block-w{width: 30vw;min-width: 230px;}
     .news-article-title{font-size: 15px!important;}
     .aside-title{max-width: none;}
+
+    .funding-block{justify-content: space-between;}
+    .funding-block-w{width: 30vw;max-width: 270px;min-width: 230px;}    
     
     .new-line-mobile{display: inline;}
 } 
@@ -272,7 +293,9 @@ h4{
 @media only screen and (min-width: 1024px) {
     .example {background: white;}
     .d-none-small{display: inline;}
+    .d-none-small-b{display: block;}
     .d-none-med{display: inline;}
+    .d-show-large-b{display: block;}
 
     #navLinks {width: 100%;height: 80px;}
     #Logo{display: none;}
@@ -288,6 +311,9 @@ h4{
     .article-block-w{width: 22vw;max-width: 270px;min-width: 75px;}
     .news-article-title{font-size: 16px!important;}
     .aside-title{max-width: none;}
+
+    .funding-block{justify-content: space-between;}
+    .funding-block-w{width: 20vw;max-width: 270px;min-width: 220px;}    
 
     .new-line-mobile{display: inline;}
 }
@@ -395,8 +421,10 @@ input:-ms-input-placeholder{color: white;}
 .height-700{min-height: 700px;}
 .height-800{min-height: 800px;}
 
-.text-white{color:white;}
+.text-black{color:#000;}
+.text-white{color:#FFF;}
 .text-mute{color:#AAA;}
+.text-gray{color:#6f6f6f;}
 .text-red{color:#ff4d4d;}
 .bg-white{background-color: #FFF;}
 .black{background-color: #000;}
