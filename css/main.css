@@ -13,6 +13,7 @@ button{
 .display-none{display: none;}
 
 .font-Saira{font-family: 'Saira', sans-serif;}
+.font-Poppins{font-family: 'Poppins', sans-serif;}
 .font-Lato{font-family: 'Lato', sans-serif;}
 .font-Roboto-Condensed{font-family: 'Roboto Condensed', sans-serif;}
 
@@ -150,15 +151,34 @@ h4{
 }
 .sub-article-header{font-size: 160%;padding-right: 10px;display: block;font-family: 'Roboto Condensed', sans-serif;}
 
-.header-link{color: #ff4d4d;font-family: 'Roboto Condensed', sans-serif;}
+.header-link{color: #ff4d4d;font-family: 'Poppins', sans-serif;}
 .header-link:hover{color: #0d0d0d;}
 
+.news-block{display: flex;flex-wrap: wrap;justify-content: space-around; margin-top: 20px;}
 .article-block{height: 130px;width: 100%;}
-.article-block-w{width: 20vw;max-width: 270px;min-width: 75px;}
-.news-bg-1{background: #000 url("../images/Latest%20News/MacbookCheap-478x270.jpg") no-repeat 50%;background-size: cover;}
-.news-article-title{display: block;font-weight: bold;font-size: 16px;padding: 5px 0 5px 0;}
+.article-block-w{width: 20vw;max-width: 270px;min-width: 75px;margin-bottom: 2vw;}
+.news-article-title{display: block;font-weight: bold;font-size: 16px!important;line-height: 1.2;padding: 5px 0 5px 0;font-family: 'Poppins', sans-serif!important;}
+.news-article-title a{color: black;}
+.news-article-title a:hover{color: red;}
 .author-link{color: #AAA;}
 .author-link:hover{color: #0d0d0d;}
+
+/*LATEST NEWS SECTION*/
+.news-bg-1{background: #000 url("../images/Latest%20News/MacbookCheap-478x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-2{background: #000 url("../images/Latest%20News/Uber-bill-hed-513x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-3{background: #000 url("../images/Latest%20News/Tim-Cook-iPhone-11-Pro-513x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-4{background: #000 url("../images/Latest%20News/sale_21594_primary_image_wide-540x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-5{background: #000 url("../images/Latest%20News/iPhone-11-Pro-513x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-6{background: #000 url("../images/Latest%20News/Apple-Watch-Series-5-cases-2-513x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-7{background: #000 url("../images/Latest%20News/bitcoin_today-header_bitcoin_today-512x270.jpg") no-repeat 50%;background-size: cover;}
+.news-bg-8{background: #000 url("../images/Latest%20News/Firefox-VPN-hed-513x270.png") no-repeat 50%;background-size: cover;}
+
+/*APPLE SPECIAL EVENT SECTION*/
+.event-bg-1{background: #000 url("../images/AppleSpecialEvent/iPhone-11-Pro-Tim-Cook-513x270.jpg") no-repeat 50%;background-size: cover;}
+.event-bg-2{background: #000 url("../images/AppleSpecialEvent/iPhone-Pro-lineup-514x270.jpg") no-repeat 50%;background-size: cover;}
+.event-bg-3{background: #000 url("../images/AppleSpecialEvent/iPhone-11-pricing-513x270.jpg") no-repeat 50%;background-size: cover;}
+.event-bg-4{background: #000 url("../images/AppleSpecialEvent/iphone11-513x270.jpg") no-repeat 50%;background-size: cover;}
+
 
 .footer-links{text-align: center;background-color: #1a1a1a;margin: auto;padding: 30px;text-transform: uppercase;}
 .footer-links ul{list-style-type: none;margin-top: 30px;}
@@ -197,9 +217,10 @@ h4{
     .sub-article-header{font-size: 110%;}
     .logo-cover{display: none;}
 
+    .news-block{justify-content: flex-start;}
     .article-block{height: 75px;width: 75px;display: inline-block;}
     .article-block-w{width: 100%;max-width: none;}
-    .news-article-title{font-size: 15px;}
+    .news-article-title{font-size: 14px!important;}
     .aside-title{max-width: 80%;}
 
     .new-line-mobile{display: block;}
@@ -207,7 +228,7 @@ h4{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .example {background: blue;}
+    .example {background: dodgerblue;}
     .d-none-small{display: inline;}
     .d-none-med{display: none;}
     
@@ -238,11 +259,10 @@ h4{
     .sub-article-header{font-size: 120%;}
     .logo-cover{display: none;}
     
+    .news-block{justify-content: space-around;}
     .article-block{height: 130px;width: 100%;}
     .article-block-w{width: 30vw;min-width: 230px;}
-    .news-article-title{font-size: 16px;font-family: 'Roboto Condensed', sans-serif;}
-    .news-article-title a{color: black;}
-    .news-article-title a:hover{color: red;}
+    .news-article-title{font-size: 15px!important;}
     .aside-title{max-width: none;}
     
     .new-line-mobile{display: inline;}
@@ -250,7 +270,7 @@ h4{
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
-    .example {background: pink;}
+    .example {background: white;}
     .d-none-small{display: inline;}
     .d-none-med{display: inline;}
 
@@ -263,9 +283,10 @@ h4{
     .sub-article-header{font-size: 160%;}
     .logo-cover{display: block;}
 
+    .news-block{justify-content: space-between;}
     .article-block{height: 130px;width: 100%;}
     .article-block-w{width: 22vw;max-width: 270px;min-width: 75px;}
-    .news-article-title{font-size: 16px;}
+    .news-article-title{font-size: 16px!important;}
     .aside-title{max-width: none;}
 
     .new-line-mobile{display: inline;}
