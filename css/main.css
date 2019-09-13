@@ -132,6 +132,7 @@ h4{
     min-height: 30vh;
 }
 .main-article-header{font-size: 3.5vw;padding-right: 60px;display: block;font-family: 'Roboto Condensed', sans-serif;}
+.main-article-header a{color: #FFF;}
 .article-by-line{font-size: 14px;color: #AAA;padding: 5px 0 4px 0;}
 .sub-article-section{width: 35%;}
 .sub-article-2{
@@ -151,6 +152,7 @@ h4{
     margin: 5px 0 0 10px;
 }
 .sub-article-header{font-size: 160%;padding-right: 10px;display: block;font-family: 'Roboto Condensed', sans-serif;}
+.sub-article-header a{color: #FFF;}
 
 .header-link{color: #ff4d4d;font-family: 'Poppins', sans-serif;}
 .header-link:hover{color: #0d0d0d;}
@@ -161,8 +163,9 @@ h4{
 .news-article-title{display: block;font-weight: bold;font-size: 16px!important;line-height: 1.2;padding: 5px 0 5px 0;font-family: 'Poppins', sans-serif!important;}
 .news-article-title a{color: black;}
 .news-article-title a:hover{color: red;}
-.author-link{color: #AAA;}
+.author-link, .author-link-white{color: #AAA;}
 .author-link:hover{color: #0d0d0d;}
+.author-link-white:hover{color: #FFF;}
 
 /*LATEST NEWS SECTION*/
 .news-bg-1{background: #000 url("../images/Latest%20News/MacbookCheap-478x270.jpg") no-repeat 50%;background-size: cover;}
@@ -191,8 +194,8 @@ h4{
 .funding-invest:nth-child(1){margin-bottom: 122px;}
 
 /*POPULAR TOPICS SECTION*/
-.popular-block{display: flex;flex-wrap: wrap;justify-content: space-between; margin-top: 20px;}
-.popular-block-w{width: 25vw;min-width: 300px;max-width: 368px;margin-bottom: 2vw;}
+.popular-block{display: flex;flex-wrap: wrap;justify-content: flex-start; margin-top: 20px;}
+.popular-block-w{width: 28vw;min-width: 250px;max-width: 360px;margin-bottom: 2vw;}
 .popular-main-article{
     color: #FFF;
     position: relative;
@@ -203,14 +206,29 @@ h4{
     margin-top: 20px;
 }
 .popular-bg-1{background-image: url("../images/Popular/google-docs-word-count-368x276.jpg");}
-.popular-main-header{font-size: 1.5em;display: block;font-family: 'Roboto Condensed', sans-serif;padding-right: 60px;}
+.popular-bg-2{background-image: url("../images/Popular/Snag_3e3a4e3-368x276.png");}
+.popular-bg-3{background-image: url("../images/Popular/simjacker-attack-hed-368x276.jpg");}
+.popular-bg-4{background-image: url("../images/Popular/hqdefault.jpg");}
+.popular-bg-5{background-image: url("../images/Popular/Learning-AI-Programming-368x276.jpg");}
+.popular-bg-6{background-image: url("../images/Popular/Untitled-design-32-368x276.jpg");}
+.popular-bg-7{background-image: url("../images/Popular/Pam-Angela-The-Office-368x276.jpg");}
+.popular-bg-8{background-image: url("../images/Popular/pong-368x276.jpg");}
+.popular-main-header{font-size: 1.5em;display: block;font-family: 'Roboto Condensed', sans-serif;padding-right: 40px;}
 .popular-main-header a{color: #FFF;}
 .popular-main-header a:hover{border-bottom: solid #777 1px;}
 
 .latest-block{background-color: rgba(255,68,34,.06);color: #ff4d4d;min-height: 96px;}
 .latest-block a{color: #ff4d4d;}
 .latest-block a:hover{text-decoration: underline;}
-.latest-bg-1{background: #000 url("../images/Popular/Microsoft-To-Do.jpg") no-repeat 50%;background-size: cover;width: 12vw;height: auto;max-width: 180px;min-width: 90px;}
+.latest-bg{background-color: #000;background-size: cover;background-size: cover;background-position: 50%;width: 12vw;height: auto;max-width: 180px;min-width: 90px;}
+.latest-bg-1{background-image: url("../images/Popular/Microsoft-To-Do.jpg");}
+.latest-bg-2{background-image: url("../images/Popular/Gocycle-GXi-11-e1568314899848.jpg");}
+.latest-bg-3{background-image: url("../images/Popular/app-store-apple-hed.png");}
+.latest-bg-4{background-image: url("../images/Popular/chineseverticalB1200.png");}
+.latest-bg-5{background-image: url("../images/Popular/Image-by-Gerd-Altmann-from-Pixabay.jpg");}
+.latest-bg-6{background-image: url("../images/Popular/nunescow.jpg");}
+.latest-bg-7{background-image: url("../images/Popular/Orion-Doom-Bethesda-hed.jpg");}
+.latest-bg-8{background-image: url("../images/Popular/Ring-Fit-Adventure.jpg");}
 
 .article-list{padding: 10px;list-style: none;font-size: 15px;}
 .article-list li::before {
@@ -241,13 +259,13 @@ h4{
 .deals-block{height: 220px;width: 100%;}
 
 .deals-bg-1{background: #000 url("../images/LatestDeals/product_30218_product_shots4.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-2{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-3{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-4{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-5{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-6{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-7{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
-.deals-bg-8{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-2{background: #000 url("../images/LatestDeals/sale_21450_primary_image.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-3{background: #000 url("../images/LatestDeals/sale_16294_primary_image.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-4{background: #000 url("../images/LatestDeals/sale_21750_primary_image.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-5{background: #000 url("../images/LatestDeals/sale_21546_primary_image.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-6{background: #000 url("../images/LatestDeals/sale_21635_primary_image.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-7{background: #000 url("../images/LatestDeals/sale_1786_primary_image.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-8{background: #000 url("../images/LatestDeals/sale_21594_primary_image.jpg") no-repeat 50%;background-size: cover;}
 
 /*FOOTER SECTION*/
 .footer-links{text-align: center;background-color: #1a1a1a;margin: auto;padding: 30px;text-transform: uppercase;}
@@ -300,6 +318,8 @@ h4{
     .funding-block-w{width: 93.5vw;max-width: none;height: auto;}    
     
     .popular-block-w{width: 93.5vw;max-width: none;min-width: none;}
+    .popular-block-m-lg{margin: 0;}
+    .popular-block-m-md{margin: 0;}
     .popular-main-article{height: 70vw;}
 
     .deals-block{height: 75px;width: 75px;display: inline-block;}
@@ -354,6 +374,8 @@ h4{
     .funding-block-w{width: 30vw;max-width: 320px;min-width: 230px;height: 260px;}    
     
     .popular-block-w{width: 47vw;max-width: 480px;min-width: 300px;}
+    .popular-block-m-lg{margin:0;}
+    .popular-block-m-md{margin: 0 0 0 20px;}
     .popular-main-article{height: auto;}
 
     .deals-block{height: 220px;width: 100%;}
@@ -389,7 +411,9 @@ h4{
     .funding-block{justify-content: space-between;}
     .funding-block-w{width: 20vw;max-width: 270px;min-width: 220px;height: 270px;}    
 
-    .popular-block-w{width: 30vw;max-width: 368px;;min-width: 300px;}
+    .popular-block-w{width: 28vw;max-width: 360px;min-width: 290px;}
+    .popular-block-m-md{margin: 0;}
+    .popular-block-m-lg{margin: 0 20px 0 20px;}
     .popular-main-article{height: auto;}
 
     .deals-block{height: 220px;width: 100%;}
