@@ -92,8 +92,9 @@ h4{
     font-size: 1.625em;
 }
 
+.fixed-top-md{position: fixed;width: 100%; z-index: 9;top: 0;}
 
-.yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;text-align: left;}
+.yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;text-align: left;width: 100%; position: fixed;top: 44px;z-index: 9;}
 
 #Logo{
     padding: 20px;
@@ -282,12 +283,16 @@ h4{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px), (min-width: 600px) {
-    .example {background: #E6FFE6;}
+/*    .example {background: #E6FFE6;}*/
     .d-none-small{display: none;}
     .d-none-small-b{display: none;}
     .d-none-med{display: inline;}
     .d-show-large-b{display: none;}
-    
+
+    main{margin-top: 68px;}
+
+    .yellowTopBar{top: 44px;}
+
     #Logo{height: 44px;}
     
     #navLinks {width: calc(100% - 108px);}
@@ -330,12 +335,16 @@ h4{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .example {background: #E6E6FF;}
+/*    .example {background: #E6E6FF;}*/
     .d-none-small{display: inline;}
     .d-none-small-b{display: block;}
     .d-none-med{display: none;}
     .d-show-large-b{display: none;}
-    
+
+    main{margin-top: 104px;}
+
+    .yellowTopBar{top: 80px;}
+
     #Logo{height: 85px;line-height: 60px;}
     
     .navWhite{height: 60%;}
@@ -386,11 +395,15 @@ h4{
 
 /* Large devices (laptops/desktops, 1024px and up) */
 @media only screen and (min-width: 1024px) {
-    .example {background: white;}
+/*    .example {background: white;}*/
     .d-none-small{display: inline;}
     .d-none-small-b{display: block;}
     .d-none-med{display: inline;}
     .d-show-large-b{display: block;}
+
+    main{margin-top: 104px;}
+    
+    .yellowTopBar{top: 80px;}
 
     #navLinks {width: 100%;height: 80px;}
     #Logo{display: none;}
