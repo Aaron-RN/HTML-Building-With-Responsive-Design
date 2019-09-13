@@ -94,7 +94,7 @@ h4{
 
 .fixed-top-md{position: fixed;width: 100%; z-index: 9;top: 0;}
 
-.yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;text-align: left;width: 100%; position: fixed;top: 44px;z-index: 9;}
+.yellowTopBar{background-color: gold;color: black;padding: 5px 20px 5px 20px;text-align: left;width: 100%; position: fixed;top: 44px;z-index: 4;}
 
 #Logo{
     padding: 20px;
@@ -231,16 +231,18 @@ h4{
 .latest-bg-7{background-image: url("../images/Popular/Orion-Doom-Bethesda-hed.jpg");}
 .latest-bg-8{background-image: url("../images/Popular/Ring-Fit-Adventure.jpg");}
 
-.article-list{padding: 10px;list-style: none;font-size: 15px;}
+.article-list{padding: 10px;list-style: none;font-size: 15px;position: relative;}
 .article-list li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: red;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    width: 1em;
+    margin-left: -1em;
+    margin-top: 2px;
 }
-.article-list article{border-bottom: solid #DDD 1px;padding: 5px 0 5px 0;}
+.article-list li{border-bottom: solid #DDD 1px;padding: 5px 0 5px 0;}
 .article-list a{color: #6f6f6f;line-height: 1.4;}
 .article-list a:hover{color: #000;}
 
@@ -272,7 +274,8 @@ h4{
 .footer-links{text-align: center;background-color: #1a1a1a;margin: auto;padding: 30px;text-transform: uppercase;}
 .footer-links ul{list-style-type: none;margin-top: 30px;}
 .footer-links ul li{display: inline-block;color: #AAA;font-size: 12px;font-family: 'Roboto Condensed', sans-serif;padding: 5px;}
-.footer-links ul li:hover{color: white;}
+.footer-links ul a{color: #AAA;}
+.footer-links ul a:hover{color: white;}
 
 .social-media{justify-content: center;font-size: 22px;margin-top: 20px;}
 .social-media a{margin-left: 12px;color: white;background-color: #404040;width: 40px;height: 40px;line-height: 40px; border-radius: 50%;border: 1px solid #404040;}

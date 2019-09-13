@@ -1,6 +1,6 @@
 .dropdown {
     position: relative;
-    //display: inline-block;
+
 }
 
 .dropdown-content {
@@ -14,7 +14,7 @@
     left:-10px;
     transition-duration: 0.50s;
     transition-delay: 0.50s;
-    z-index: 1;
+    z-index: 12;
 }
 
 .dropdown-content a {
