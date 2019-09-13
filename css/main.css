@@ -22,6 +22,7 @@ strong{font-weight: bold;}
 .underline{text-decoration: underline;}
 .uppercase{text-transform: uppercase;}
 .smallcaps{font-variant: small-caps;}
+.text-strikeout{text-decoration: line-through;}
 
 .bold{font-weight: 700;}
 .bold-100{font-weight: 100;}
@@ -191,35 +192,62 @@ h4{
 
 /*POPULAR TOPICS SECTION*/
 .popular-block{display: flex;flex-wrap: wrap;justify-content: space-between; margin-top: 20px;}
-.popular-block-w{width: 20vw;max-width: 368px;min-width: 360px;margin-bottom: 2vw;display: inline-block;}
+.popular-block-w{width: 25vw;min-width: 300px;max-width: 368px;margin-bottom: 2vw;}
 .popular-main-article{
     color: #FFF;
     position: relative;
     background-size: cover;
-    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
     min-height: 276px;
     margin-top: 20px;
 }
-.popular-bg-1{background: #000 url("../images/Popular/google-docs-word-count-368x276.jpg") no-repeat 50%;}
-.popular-main-header{font-size: 1.5vw;display: block;font-family: 'Roboto Condensed', sans-serif;padding-right: 60px;}
+.popular-bg-1{background-image: url("../images/Popular/google-docs-word-count-368x276.jpg");}
+.popular-main-header{font-size: 1.5em;display: block;font-family: 'Roboto Condensed', sans-serif;padding-right: 60px;}
+.popular-main-header a{color: #FFF;}
+.popular-main-header a:hover{border-bottom: solid #777 1px;}
 
-.latest-block{background-color: rgba(255,68,34,.06);color: #ff4d4d;}
+.latest-block{background-color: rgba(255,68,34,.06);color: #ff4d4d;min-height: 96px;}
 .latest-block a{color: #ff4d4d;}
 .latest-block a:hover{text-decoration: underline;}
-.latest-bg-1{background: #000 url("../images/Popular/Microsoft-To-Do.jpg") no-repeat 50%;background-size: cover;width: 180px;height: auto;}
+.latest-bg-1{background: #000 url("../images/Popular/Microsoft-To-Do.jpg") no-repeat 50%;background-size: cover;width: 12vw;height: auto;max-width: 180px;min-width: 90px;}
 
 .article-list{padding: 10px;list-style: none;font-size: 15px;}
 .article-list li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: red; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 .article-list article{border-bottom: solid #DDD 1px;padding: 5px 0 5px 0;}
 .article-list a{color: #6f6f6f;line-height: 1.4;}
 .article-list a:hover{color: #000;}
+
+/*LATEST DEALS SECTION*/
+.deals-cover{
+    background-image: url(../images/LatestDeals/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+}
+.deals-text{transform: rotate(45deg);top:25px;left:8px;width: 100%;text-align: center;font-weight: bold;font-size: 16px;text-transform: uppercase;position: relative;font-family: 'Poppins', sans-serif;}
+.deals-block{height: 220px;width: 100%;}
+
+.deals-bg-1{background: #000 url("../images/LatestDeals/product_30218_product_shots4.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-2{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-3{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-4{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-5{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-6{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-7{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
+.deals-bg-8{background: #000 url("../images/LatestDeals/.jpg") no-repeat 50%;background-size: cover;}
 
 /*FOOTER SECTION*/
 .footer-links{text-align: center;background-color: #1a1a1a;margin: auto;padding: 30px;text-transform: uppercase;}
@@ -236,7 +264,7 @@ h4{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 600px), (min-width: 600px) {
-    .example {background: green;}
+    .example {background: #E6FFE6;}
     .d-none-small{display: none;}
     .d-none-small-b{display: none;}
     .d-none-med{display: inline;}
@@ -262,22 +290,27 @@ h4{
     .logo-cover{display: none;}
 
     .news-block{justify-content: flex-start;}
+    .news-block article{margin: 0;}
     .article-block{height: 75px;width: 75px;display: inline-block;}
     .article-block-w{width: 100%;max-width: none;}
     .news-article-title{font-size: 14px!important;}
     .aside-title{max-width: 80%;}
 
     .funding-block{justify-content: flex-start;}
-    .funding-block-w{width: 93.5vw;max-width: none}    
+    .funding-block-w{width: 93.5vw;max-width: none;height: auto;}    
     
-    .popular-block-w{width: 100%;max-width: none;min-width: none;}
+    .popular-block-w{width: 93.5vw;max-width: none;min-width: none;}
+    .popular-main-article{height: 70vw;}
 
+    .deals-block{height: 75px;width: 75px;display: inline-block;}
+    .deals-cover{display: none;}
+    
     .new-line-mobile{display: block;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .example {background: dodgerblue;}
+    .example {background: #E6E6FF;}
     .d-none-small{display: inline;}
     .d-none-small-b{display: block;}
     .d-none-med{display: none;}
@@ -310,16 +343,21 @@ h4{
     .sub-article-header{font-size: 120%;}
     .logo-cover{display: none;}
     
-    .news-block{justify-content: space-around;}
+    .news-block{justify-content: flex-start;}
+    .news-block article:nth-of-type(3n+2){margin: 0 20px 0 20px;}
     .article-block{height: 130px;width: 100%;}
     .article-block-w{width: 30vw;min-width: 230px;}
     .news-article-title{font-size: 15px!important;}
     .aside-title{max-width: none;}
 
     .funding-block{justify-content: space-between;}
-    .funding-block-w{width: 30vw;max-width: 270px;min-width: 230px;}    
+    .funding-block-w{width: 30vw;max-width: 320px;min-width: 230px;height: 260px;}    
     
-    .popular-block-w{width: 30vw;max-width: none;min-width: 360px;}
+    .popular-block-w{width: 47vw;max-width: 480px;min-width: 300px;}
+    .popular-main-article{height: auto;}
+
+    .deals-block{height: 220px;width: 100%;}
+    .deals-cover{display: block;}
 
     .new-line-mobile{display: inline;}
 } 
@@ -342,15 +380,20 @@ h4{
     .logo-cover{display: block;}
 
     .news-block{justify-content: space-between;}
+    .news-block article{margin: 0!important;}
     .article-block{height: 130px;width: 100%;}
     .article-block-w{width: 22vw;max-width: 270px;min-width: 75px;}
     .news-article-title{font-size: 16px!important;}
     .aside-title{max-width: none;}
 
     .funding-block{justify-content: space-between;}
-    .funding-block-w{width: 20vw;max-width: 270px;min-width: 220px;}    
+    .funding-block-w{width: 20vw;max-width: 270px;min-width: 220px;height: 270px;}    
 
-    .popular-block-w{width: 20vw;max-width: 368px;min-width: 360px;}
+    .popular-block-w{width: 30vw;max-width: 368px;;min-width: 300px;}
+    .popular-main-article{height: auto;}
+
+    .deals-block{height: 220px;width: 100%;}
+    .deals-cover{display: block;}
 
     .new-line-mobile{display: inline;}
 }
@@ -462,6 +505,7 @@ input:-ms-input-placeholder{color: white;}
 .text-white{color:#FFF;}
 .text-mute{color:#AAA;}
 .text-gray{color:#6f6f6f;}
+.text-dark{color:#555;}
 .text-red{color:#ff4d4d;}
 .bg-white{background-color: #FFF;}
 .black{background-color: #000;}
