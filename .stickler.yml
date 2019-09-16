@@ -3,8 +3,5 @@ linters:
         config: 'stylelint.config.js'
         fixer: true
 
-    black:
-        config: ./pyproject.toml
-        fixer: true
 fixers:
     enable: true
