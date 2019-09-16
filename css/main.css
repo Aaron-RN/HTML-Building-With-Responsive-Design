@@ -2,27 +2,27 @@ html { box-sizing: border-box; }
 a { text-decoration: none; }
 
 *,
- *::before,
- *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* Used for Debugging purposes */
 div,
- header,
- footer,
- article,
- a,
- ul,
- li { transition-duration: 0.5s; }
+header,
+footer,
+article,
+a,
+ul,
+li { transition-duration: 0.5s; }
 
 div:hover,
- header:hover,
- footer:hover,
- article:hover,
- a:hover,
- ul:hover,
- li:hover {
+header:hover,
+footer:hover,
+article:hover,
+a:hover,
+ul:hover,
+li:hover {
   outline: 1px blue solid;
 }
 
@@ -195,8 +195,9 @@ h4 {
 .news-article-title { display: block; font-weight: bold; font-size: 16px !important; line-height: 1.2; padding: 5px 0 5px 0; font-family: 'Poppins', sans-serif !important; }
 .news-article-title a { color: black; }
 .news-article-title a:hover { color: red; }
+
 .author-link,
- .author-link-white { color: #aaa; }
+.author-link-white { color: #aaa; }
 .author-link:hover { color: #0d0d0d; }
 .author-link-white:hover { color: #fff; }
 
