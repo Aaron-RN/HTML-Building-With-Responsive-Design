@@ -199,16 +199,16 @@ h4 {
 .funding-block { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px; }
 .funding-block-w { width: 20vw; max-width: 270px; min-width: 220px; margin-bottom: 2vw; overflow: hidden; background-color: #fffaf8; }
 .funding-img { width: 60px; position: absolute; left: 10px; bottom: 18px; }
-.funding-title { 
-    background-color: #f42; 
-    padding: 12px; 
-    font-size: 10px !important; 
-    color: white; 
-    padding-left: 80px; 
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 900; 
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
+.funding-title {
+    background-color: #f42;
+    padding: 12px;
+    font-size: 10px !important;
+    color: white;
+    padding-left: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
 }
 .funding-info { background-color: rgba(255, 68, 34, 0.08); padding: 10px; padding-left: 80px; color: #000; }
