@@ -369,8 +369,8 @@ h4 {
   .navBlack { height: 40%; }
 
   #navLinks { width: calc(100% - 108px); }
-  .navBlack {display: block; color: #888; background-color: black; padding: 5px 10px; }
-  .navBlack a {display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
+  .navBlack { display: block; color: #888; background-color: black; padding: 5px 10px; }
+  .navBlack a { display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
   .navBlack .highlight { color: #ddd; }
   .navBlack a:hover { color: #ccc; }
   .navWhite { color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
