@@ -27,7 +27,6 @@ button {
 .font-Lato { font-family: 'Lato', sans-serif; }
 .font-Roboto-Condensed { font-family: 'Roboto Condensed', sans-serif; }
 
-
 strong { font-weight: bold; }
 .underline { text-decoration: underline; }
 .uppercase { text-transform: uppercase; }
@@ -66,8 +65,6 @@ strong { font-weight: bold; }
 .size-50 { font-size: 3.125em; }
 
 .lineH-1-2 { line-height: 1.2; }
-
-
 
 h1 {
   display: inline;
@@ -202,7 +199,18 @@ h4 {
 .funding-block { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px; }
 .funding-block-w { width: 20vw; max-width: 270px; min-width: 220px; margin-bottom: 2vw; overflow: hidden; background-color: #fffaf8; }
 .funding-img { width: 60px; position: absolute; left: 10px; bottom: 18px; }
-.funding-title { background-color: #f42; padding: 12px; font-size: 10px !important; color: white; padding-left: 80px; font-family: 'Poppins', sans-serif; font-weight: 900; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.funding-title { 
+    background-color: #f42; 
+    padding: 12px; 
+    font-size: 10px !important; 
+    color: white; 
+    padding-left: 80px; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 900; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
 .funding-info { background-color: rgba(255, 68, 34, 0.08); padding: 10px; padding-left: 80px; color: #000; }
 .funding-invest { border-bottom: rgba(255, 68, 34, 0.08) solid 2px; padding: 16px; font-family: 'Saira', sans-serif; font-size: 14px; }
 .funding-invest a { color: #6f6f6f; }
@@ -365,15 +373,12 @@ h4 {
 
   #Logo { height: 85px; line-height: 60px; }
 
-  .navWhite { height: 60%; }
-  .navBlack { height: 40%; }
-
   #navLinks { width: calc(100% - 108px); }
-  .navBlack {display: block; color: #888; background-color: black; padding: 5px 10px; }
+  .navBlack { height: 40%; display: block; color: #888; background-color: black; padding: 5px 10px; }
   .navBlack a {display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
   .navBlack .highlight { color: #ddd; }
   .navBlack a:hover { color: #ccc; }
-  .navWhite { color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
+  .navWhite { height: 60%; color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
   .navWhite a { display: block; color: #999; cursor: pointer; padding: 12px 10px; transition-duration: 0.5s; }
   .navWhite a:hover { color: #000; }
 
@@ -454,7 +459,6 @@ h4 {
 #navBars { padding: 0 15px; font-size: 18px; color: orangered; border-left: 1px lightgray solid; }
 #searchBtn { padding: 0 15px; font-size: 16px; color: lightgray; border-left: 1px lightgray solid; }
 #searchBtn:hover { color: gray; }
-
 
 [class*="col"] {
   position: relative;
