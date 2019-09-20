@@ -236,7 +236,7 @@ h4 {
 .latest-block { background-color: rgba(255, 68, 34, 0.06); color: #ff4d4d; min-height: 96px; }
 .latest-block a { color: #ff4d4d; }
 .latest-block a:hover { text-decoration: underline; }
-.latest-bg { background-color: #000; background-size: cover; background-size: cover; background-position: 50%; width: 12vw; height: auto; max-width: 180px; min-width: 90px; }
+.latest-bg { background-color: #000; background-size: cover; background-position: 50%; width: 12vw; height: auto; max-width: 180px; min-width: 90px; }
 .latest-bg-1 { background-image: url("../images/Popular/Microsoft-To-Do.jpg"); }
 .latest-bg-2 { background-image: url("../images/Popular/Gocycle-GXi-11-e1568314899848.jpg"); }
 .latest-bg-3 { background-image: url("../images/Popular/app-store-apple-hed.png"); }
@@ -318,8 +318,7 @@ h4 {
   .navBlack { display: none; }
   .navBlack a { display: none; }
   .navWhite a { display: none; }
-  .navWhite { height: 100%; }
-  .navWhite { color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
+  .navWhite { height: 100%; color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
 
   #navBars { display: block; }
 
@@ -370,15 +369,12 @@ h4 {
   .navBlack { height: 40%; }
 
   #navLinks { width: calc(100% - 108px); }
-  .navBlack { display: block; }
-  .navBlack a { display: block; }
-  .navWhite a { display: block; }
-  .navBlack { color: #888; background-color: black; padding: 5px 10px; }
-  .navBlack a { color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
+  .navBlack {display: block; color: #888; background-color: black; padding: 5px 10px; }
+  .navBlack a {display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
   .navBlack .highlight { color: #ddd; }
   .navBlack a:hover { color: #ccc; }
   .navWhite { color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
-  .navWhite a { color: #999; cursor: pointer; padding: 12px 10px; transition-duration: 0.5s; }
+  .navWhite a { display: block; color: #999; cursor: pointer; padding: 12px 10px; transition-duration: 0.5s; }
   .navWhite a:hover { color: #000; }
 
   #navBars { display: none; }
