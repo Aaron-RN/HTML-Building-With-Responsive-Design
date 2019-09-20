@@ -282,7 +282,18 @@ h4 {
   width: 80px;
   height: 100%;
 }
-.deals-text { transform: rotate(45deg); top: 25px; left: 8px; width: 100%; text-align: center; font-weight: bold; font-size: 16px; text-transform: uppercase; position: relative; font-family: 'Poppins', sans-serif; }
+.deals-text { 
+    transform: rotate(45deg);
+    top: 25px;
+    left: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
 .deals-block { height: 220px; width: 100%; }
 
 .deals-bg-1 { background: #000 url("../images/LatestDeals/product_30218_product_shots4.jpg") no-repeat 50%; background-size: cover; }
