@@ -199,17 +199,18 @@ h4 {
 .funding-block { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px; }
 .funding-block-w { width: 20vw; max-width: 270px; min-width: 220px; margin-bottom: 2vw; overflow: hidden; background-color: #fffaf8; }
 .funding-img { width: 60px; position: absolute; left: 10px; bottom: 18px; }
+
 .funding-title {
-    background-color: #f42;
-    padding: 12px;
-    font-size: 10px !important;
-    color: white;
-    padding-left: 80px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  background-color: #f42;
+  padding: 12px;
+  font-size: 10px !important;
+  color: white;
+  padding-left: 80px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .funding-info { background-color: rgba(255, 68, 34, 0.08); padding: 10px; padding-left: 80px; color: #000; }
 .funding-invest { border-bottom: rgba(255, 68, 34, 0.08) solid 2px; padding: 16px; font-family: 'Saira', sans-serif; font-size: 14px; }
@@ -375,7 +376,7 @@ h4 {
 
   #navLinks { width: calc(100% - 108px); }
   .navBlack { height: 40%; display: block; color: #888; background-color: black; padding: 5px 10px; }
-  .navBlack a {display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
+  .navBlack a { display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
   .navBlack .highlight { color: #ddd; }
   .navBlack a:hover { color: #ccc; }
   .navWhite { height: 60%; color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
