@@ -356,7 +356,7 @@ h4 {
   .article-block { height: 75px; width: 75px; display: inline-block; }
   .article-block-w { width: 100%; max-width: none; }
   .news-article-title { font-size: 14px !important; }
-  .aside-title { max-width: 80%; }
+  .aside-title { max-width: 75%; }
 
   .funding-block { justify-content: flex-start; }
   .funding-block-w { width: 93.5vw; max-width: none; height: auto; }
