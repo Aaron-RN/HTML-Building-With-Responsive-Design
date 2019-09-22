@@ -1,0 +1,495 @@
+html { box-sizing: border-box; }
+a { text-decoration: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+div,
+header,
+footer,
+article,
+a,
+ul,
+li { transition-duration: 0.5s; }
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.display-none { display: none; }
+
+.font-Saira { font-family: 'Saira', sans-serif; }
+.font-Poppins { font-family: 'Poppins', sans-serif; }
+.font-Lato { font-family: 'Lato', sans-serif; }
+.font-Roboto-Condensed { font-family: 'Roboto Condensed', sans-serif; }
+
+strong { font-weight: bold; }
+.underline { text-decoration: underline; }
+.uppercase { text-transform: uppercase; }
+.smallcaps { font-variant: small-caps; }
+.text-strikeout { text-decoration: line-through; }
+
+.bold { font-weight: 700; }
+.bold-100 { font-weight: 100; }
+.bold-200 { font-weight: 200; }
+.bold-300 { font-weight: 300; }
+.bold-400 { font-weight: 400; }
+.bold-500 { font-weight: 500; }
+.bold-600 { font-weight: 600; }
+.bold-800 { font-weight: 800; }
+.bold-900 { font-weight: 900; }
+
+.italic { font-style: italic; }
+
+.size-6 { font-size: 0.375em; }
+.size-8 { font-size: 0.5em !important; }
+.size-10 { font-size: 0.625em !important; }
+.size-12 { font-size: 0.75em !important; }
+.size-13 { font-size: 0.8125em; }
+.size-14 { font-size: 0.875em; }
+.size-16 { font-size: 1em; }
+.size-18 { font-size: 1.125em; }
+.size-20 { font-size: 1.25em; }
+.size-22 { font-size: 1.375em; }
+.size-24 { font-size: 1.5em; }
+.size-26 { font-size: 1.625em; }
+.size-28 { font-size: 1.75em; }
+.size-30 { font-size: 1.875em; }
+.size-32 { font-size: 2em; }
+.size-34 { font-size: 2.125em; }
+.size-36 { font-size: 2.25em; }
+.size-50 { font-size: 3.125em; }
+
+.lineH-1-2 { line-height: 1.2; }
+
+h1 {
+  display: inline;
+  font-weight: 900;
+  font-size: 2.75em;
+  font-family: 'Catamaran', sans-serif;
+}
+
+h2 {
+  display: inline;
+  font-weight: 800;
+  font-size: 2.375em;
+}
+
+h3 {
+  display: inline;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.header3 {
+  display: inline;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+h4 {
+  display: inline;
+  font-weight: 600;
+  font-size: 1.625em;
+}
+
+.fixed-top-md { position: fixed; width: 100%; z-index: 9; top: 0; }
+
+.yellowTopBar { background-color: gold; color: black; padding: 5px 20px; text-align: left; width: 100%; position: fixed; top: 44px; z-index: 4; }
+
+#Logo {
+  padding: 20px;
+  width: 108px;
+  background-image: linear-gradient(to bottom right, hotpink, red);
+  text-align: center;
+}
+
+.logo-cover {
+  background-image: linear-gradient(to bottom right, #ff4d4d, rgba(0, 0, 0, 0));
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.cover-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.z-2 { z-index: 3; }
+.main-article-section { height: 75vh; max-height: 560px; }
+
+.main-article {
+  position: relative;
+  background: #000 url("../images/iphone11-796x419.jpg") no-repeat 50%;
+  background-size: cover;
+  width: 65%;
+  height: 100%;
+  min-height: 30vh;
+}
+.main-article-header { font-size: 3.5vw; padding-right: 60px; display: block; font-family: 'Roboto Condensed', sans-serif; }
+.main-article-header a { color: #fff; }
+.article-by-line { font-size: 14px; color: #aaa; padding: 5px 0 4px 0; }
+.sub-article-section { width: 35%; }
+
+.sub-article-2 {
+  position: relative;
+  background: #000 url("../images/Apple-Watch-Series-5-cases-2-796x419.jpg") no-repeat 50%;
+  background-size: cover;
+  height: 50%;
+  min-height: 30vh;
+  margin: 0 0 5px 10px;
+}
+
+.sub-article-3 {
+  position: relative;
+  background: #000 url("../images/iPad-796x418.jpg") no-repeat 50%;
+  background-size: cover;
+  height: 50%;
+  min-height: 30vh;
+  margin: 5px 0 0 10px;
+}
+.sub-article-header { font-size: 160%; padding-right: 10px; display: block; font-family: 'Roboto Condensed', sans-serif; }
+.sub-article-header a { color: #fff; }
+
+.header-link { color: #ff4d4d; font-family: 'Poppins', sans-serif; }
+.header-link:hover { color: #0d0d0d; }
+
+.news-block { display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px; }
+.article-block { height: 130px; width: 100%; }
+.article-block-w { width: 20vw; max-width: 270px; min-width: 75px; margin-bottom: 2vw; }
+.news-article-title { display: block; font-weight: bold; font-size: 16px !important; line-height: 1.2; padding: 5px 0; font-family: 'Poppins', sans-serif !important; }
+.news-article-title a { color: black; }
+.news-article-title a:hover { color: red; }
+
+.author-link,
+.author-link-white { color: #aaa; }
+.author-link:hover { color: #0d0d0d; }
+.author-link-white:hover { color: #fff; }
+
+/* LATEST NEWS SECTION */
+.news-bg-1 { background: #000 url("../images/Latest%20News/MacbookCheap-478x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-2 { background: #000 url("../images/Latest%20News/Uber-bill-hed-513x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-3 { background: #000 url("../images/Latest%20News/Tim-Cook-iPhone-11-Pro-513x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-4 { background: #000 url("../images/Latest%20News/sale_21594_primary_image_wide-540x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-5 { background: #000 url("../images/Latest%20News/iPhone-11-Pro-513x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-6 { background: #000 url("../images/Latest%20News/Apple-Watch-Series-5-cases-2-513x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-7 { background: #000 url("../images/Latest%20News/bitcoin_today-header_bitcoin_today-512x270.jpg") no-repeat 50%; background-size: cover; }
+.news-bg-8 { background: #000 url("../images/Latest%20News/Firefox-VPN-hed-513x270.png") no-repeat 50%; background-size: cover; }
+
+/* APPLE SPECIAL EVENT SECTION */
+.event-bg-1 { background: #000 url("../images/AppleSpecialEvent/iPhone-11-Pro-Tim-Cook-513x270.jpg") no-repeat 50%; background-size: cover; }
+.event-bg-2 { background: #000 url("../images/AppleSpecialEvent/iPhone-Pro-lineup-514x270.jpg") no-repeat 50%; background-size: cover; }
+.event-bg-3 { background: #000 url("../images/AppleSpecialEvent/iPhone-11-pricing-513x270.jpg") no-repeat 50%; background-size: cover; }
+.event-bg-4 { background: #000 url("../images/AppleSpecialEvent/iphone11-513x270.jpg") no-repeat 50%; background-size: cover; }
+
+/* FUNDING SECTION */
+.funding-block { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px; }
+.funding-block-w { width: 20vw; max-width: 270px; min-width: 220px; margin-bottom: 2vw; overflow: hidden; background-color: #fffaf8; }
+.funding-img { width: 60px; position: absolute; left: 10px; bottom: 18px; }
+
+.funding-title {
+  background-color: #f42;
+  padding: 12px;
+  font-size: 10px !important;
+  color: white;
+  padding-left: 80px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.funding-info { background-color: rgba(255, 68, 34, 0.08); padding: 10px; padding-left: 80px; color: #000; }
+.funding-invest { border-bottom: rgba(255, 68, 34, 0.08) solid 2px; padding: 16px; font-family: 'Saira', sans-serif; font-size: 14px; }
+.funding-invest a { color: #6f6f6f; }
+.funding-invest:nth-child(1) { margin-bottom: 122px; }
+
+/* POPULAR TOPICS SECTION */
+.popular-block { display: flex; flex-wrap: wrap; justify-content: flex-start; margin-top: 20px; }
+.popular-block-w { width: 28vw; min-width: 250px; max-width: 360px; margin-bottom: 2vw; }
+
+.popular-main-article {
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-height: 276px;
+  margin-top: 20px;
+}
+.popular-bg-1 { background-image: url("../images/Popular/google-docs-word-count-368x276.jpg"); }
+.popular-bg-2 { background-image: url("../images/Popular/Snag_3e3a4e3-368x276.png"); }
+.popular-bg-3 { background-image: url("../images/Popular/simjacker-attack-hed-368x276.jpg"); }
+.popular-bg-4 { background-image: url("../images/Popular/hqdefault.jpg"); }
+.popular-bg-5 { background-image: url("../images/Popular/Learning-AI-Programming-368x276.jpg"); }
+.popular-bg-6 { background-image: url("../images/Popular/Untitled-design-32-368x276.jpg"); }
+.popular-bg-7 { background-image: url("../images/Popular/Pam-Angela-The-Office-368x276.jpg"); }
+.popular-bg-8 { background-image: url("../images/Popular/pong-368x276.jpg"); }
+.popular-main-header { font-size: 1.5em; display: block; font-family: 'Roboto Condensed', sans-serif; padding-right: 40px; }
+.popular-main-header a { color: #fff; }
+.popular-main-header a:hover { border-bottom: solid #777 1px; }
+
+.latest-block { background-color: rgba(255, 68, 34, 0.06); color: #ff4d4d; min-height: 96px; }
+.latest-block a { color: #ff4d4d; }
+.latest-block a:hover { text-decoration: underline; }
+.latest-bg { background-color: #000; background-size: cover; background-position: 50%; width: 12vw; height: auto; max-width: 180px; min-width: 90px; }
+.latest-bg-1 { background-image: url("../images/Popular/Microsoft-To-Do.jpg"); }
+.latest-bg-2 { background-image: url("../images/Popular/Gocycle-GXi-11-e1568314899848.jpg"); }
+.latest-bg-3 { background-image: url("../images/Popular/app-store-apple-hed.png"); }
+.latest-bg-4 { background-image: url("../images/Popular/chineseverticalB1200.png"); }
+.latest-bg-5 { background-image: url("../images/Popular/Image-by-Gerd-Altmann-from-Pixabay.jpg"); }
+.latest-bg-6 { background-image: url("../images/Popular/nunescow.jpg"); }
+.latest-bg-7 { background-image: url("../images/Popular/Orion-Doom-Bethesda-hed.jpg"); }
+.latest-bg-8 { background-image: url("../images/Popular/Ring-Fit-Adventure.jpg"); }
+
+.article-list { padding: 10px; list-style: none; font-size: 15px; position: relative; }
+
+.article-list li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  width: 1em;
+  margin-left: -1em;
+  margin-top: 2px;
+}
+.article-list li { border-bottom: solid #ddd 1px; padding: 5px 0; }
+.article-list a { color: #6f6f6f; line-height: 1.4; }
+.article-list a:hover { color: #000; }
+
+/* LATEST DEALS SECTION */
+.deals-cover {
+  background-image: url(../images/LatestDeals/deals-ribbon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+}
+
+.deals-text {
+  transform: rotate(45deg);
+  top: 25px;
+  left: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+.deals-block { height: 220px; width: 100%; }
+
+.deals-bg-1 { background: #000 url("../images/LatestDeals/product_30218_product_shots4.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-2 { background: #000 url("../images/LatestDeals/sale_21450_primary_image.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-3 { background: #000 url("../images/LatestDeals/sale_16294_primary_image.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-4 { background: #000 url("../images/LatestDeals/sale_21750_primary_image.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-5 { background: #000 url("../images/LatestDeals/sale_21546_primary_image.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-6 { background: #000 url("../images/LatestDeals/sale_21635_primary_image.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-7 { background: #000 url("../images/LatestDeals/sale_1786_primary_image.jpg") no-repeat 50%; background-size: cover; }
+.deals-bg-8 { background: #000 url("../images/LatestDeals/sale_21594_primary_image.jpg") no-repeat 50%; background-size: cover; }
+
+/* FOOTER SECTION */
+.footer-links { text-align: center; background-color: #1a1a1a; margin: auto; padding: 30px; text-transform: uppercase; }
+.footer-links ul { list-style-type: none; margin-top: 30px; }
+.footer-links ul li { display: inline-block; color: #aaa; font-size: 12px; font-family: 'Roboto Condensed', sans-serif; padding: 5px; }
+.footer-links ul a { color: #aaa; }
+.footer-links ul a:hover { color: white; }
+
+.social-media { justify-content: center; font-size: 22px; margin-top: 20px; }
+.social-media a { margin-left: 12px; color: white; background-color: #404040; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; border: 1px solid #404040; }
+.social-media a:first-of-type { margin-left: 0; }
+.social-media a:hover { background-color: #1a1a1a; }
+
+.copyright-section { background-color: #0d0d0d; color: #aaa; text-align: center; font-size: 13px; padding: 40px; font-family: 'Roboto Condensed', sans-serif; line-height: 1.5; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px), (min-width: 600px) {
+  /*    .example {background: #E6FFE6;} */
+  .d-none-small { display: none; }
+  .d-none-small-b { display: none; }
+  .d-none-med { display: inline; }
+  .d-show-large-b { display: none; }
+
+  main { margin-top: 68px; }
+
+  .yellowTopBar { top: 44px; }
+
+  #Logo { height: 44px; }
+
+  #navLinks { width: calc(100% - 108px); }
+  .navBlack { display: none; }
+  .navBlack a { display: none; }
+  .navWhite a { display: none; }
+  .navWhite { height: 100%; color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
+
+  #navBars { display: block; }
+
+  .main-article-section { height: auto; flex-direction: column; }
+  .main-article { width: 100%; }
+  .sub-article-section { width: 100%; }
+  .sub-article-2 { margin: 5px 0; }
+  .sub-article-3 { margin: 0; }
+  .sub-article-header { font-size: 110%; }
+  .logo-cover { display: none; }
+
+  .news-block { justify-content: flex-start; }
+  .news-block article { margin: 0; }
+  .article-block { height: 75px; width: 75px; display: inline-block; }
+  .article-block-w { width: 100%; max-width: none; }
+  .news-article-title { font-size: 14px !important; }
+  .aside-title { max-width: 75%; }
+
+  .funding-block { justify-content: flex-start; }
+  .funding-block-w { width: 93.5vw; max-width: none; height: auto; }
+
+  .popular-block-w { width: 93.5vw; max-width: none; min-width: none; }
+  .popular-block-m-lg { margin: 0; }
+  .popular-block-m-md { margin: 0; }
+  .popular-main-article { height: 70vw; }
+
+  .deals-block { height: 75px; width: 75px; display: inline-block; }
+  .deals-cover { display: none; }
+
+  .new-line-mobile { display: block; }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*    .example {background: #E6E6FF;} */
+  .d-none-small { display: inline; }
+  .d-none-small-b { display: block; }
+  .d-none-med { display: none; }
+  .d-show-large-b { display: none; }
+
+  main { margin-top: 104px; }
+
+  .yellowTopBar { top: 80px; }
+
+  #Logo { height: 85px; line-height: 60px; }
+
+  #navLinks { width: calc(100% - 108px); }
+  .navBlack { height: 40%; display: block; color: #888; background-color: black; padding: 5px 10px; }
+  .navBlack a { display: block; color: #888; cursor: pointer; padding: 4px 10px; transition-duration: 0.5s; }
+  .navBlack .highlight { color: #ddd; }
+  .navBlack a:hover { color: #ccc; }
+  .navWhite { height: 60%; color: #888; background-color: whitesmoke; padding: 0 0 0 10px; }
+  .navWhite a { display: block; color: #999; cursor: pointer; padding: 12px 10px; transition-duration: 0.5s; }
+  .navWhite a:hover { color: #000; }
+
+  #navBars { display: none; }
+
+  .main-article-section { height: 63vh; flex-direction: row; }
+  .main-article { width: 65%; }
+  .sub-article-section { width: 35%; }
+  .sub-article-2 { margin: 0 0 5px 10px; }
+  .sub-article-3 { margin: 5px 0 0 10px; }
+  .sub-article-header { font-size: 120%; }
+  .logo-cover { display: none; }
+
+  .news-block { justify-content: flex-start; }
+  .news-block article:nth-of-type(3n+2) { margin: 0 20px; }
+  .article-block { height: 130px; width: 100%; }
+  .article-block-w { width: 30vw; min-width: 230px; }
+  .news-article-title { font-size: 15px !important; }
+  .aside-title { max-width: none; }
+
+  .funding-block { justify-content: space-between; }
+  .funding-block-w { width: 30vw; max-width: 320px; min-width: 230px; height: 260px; }
+
+  .popular-block-w { width: 47vw; max-width: 480px; min-width: 300px; }
+  .popular-block-m-lg { margin: 0; }
+  .popular-block-m-md { margin: 0 0 0 20px; }
+  .popular-main-article { height: auto; }
+
+  .deals-block { height: 220px; width: 100%; }
+  .deals-cover { display: block; }
+
+  .new-line-mobile { display: inline; }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  /*    .example {background: white;} */
+  .d-none-small { display: inline; }
+  .d-none-small-b { display: block; }
+  .d-none-med { display: inline; }
+  .d-show-large-b { display: block; }
+
+  main { margin-top: 104px; }
+
+  .yellowTopBar { top: 80px; }
+
+  #navLinks { width: 100%; height: 80px; }
+  #Logo { display: none; }
+
+  .main-article-section { height: 75vh; flex-direction: row; }
+  .main-article { width: 65%; }
+  .sub-article-section { width: 35%; }
+  .sub-article-header { font-size: 160%; }
+  .logo-cover { display: block; }
+
+  .news-block { justify-content: space-between; }
+  .news-block article { margin: 0 !important; }
+  .article-block { height: 130px; width: 100%; }
+  .article-block-w { width: 22vw; max-width: 270px; min-width: 75px; }
+  .news-article-title { font-size: 16px !important; }
+  .aside-title { max-width: none; }
+
+  .funding-block { justify-content: space-between; }
+  .funding-block-w { width: 20vw; max-width: 270px; min-width: 220px; height: 270px; }
+
+  .popular-block-w { width: 28vw; max-width: 360px; min-width: 290px; }
+  .popular-block-m-md { margin: 0; }
+  .popular-block-m-lg { margin: 0 20px; }
+  .popular-main-article { height: auto; }
+
+  .deals-block { height: 220px; width: 100%; }
+  .deals-cover { display: block; }
+
+  .new-line-mobile { display: inline; }
+}
+
+#navLinks { overflow: visible; }
+#navBars { padding: 0 15px; font-size: 18px; color: orangered; border-left: 1px lightgray solid; }
+#searchBtn { padding: 0 15px; font-size: 16px; color: lightgray; border-left: 1px lightgray solid; }
+#searchBtn:hover { color: gray; }
+
+[class*="col"] {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.col-1-1 {
+  display: block;
+  width: 100%;
+}
+
+.img-tiny { width: 12px; }
+
+.text-black { color: #000; }
+.text-white { color: #fff; }
+.text-mute { color: #aaa; }
+.text-gray { color: #6f6f6f; }
+.text-dark { color: #555; }
+.text-red { color: #ff4d4d; }

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/056d9f1094.js"></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/DropBox.css">
+        <link rel="stylesheet" href="css/positioning.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira:100,200,300,400,500,600,700,800,900|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Poppins:400,500,600,700,800,900|Roboto+Condensed:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <title>Responsive Design, Aaron</title>
+    </head>
+    <body class="example">
+        <header>
+            <h2 class="display-none">The Next Web Website Layout</h2>
+            <nav class="position-relative">
+                <h1 class="display-none">Navigation</h1>
+                <div class="flex-container flex-row fixed-top-md">
+                <div id="Logo" class="table-cell">
+                    <figure><img src="images/tnw-logo.svg" alt="The next web (TNW) Logo"></figure>
+                </div> 
+                
+                <div id="navLinks" class="flex-container flex-col pad-0">
+                <div class="navBlack font-Lato flex-container alignitems-center bold-600 size-13">
+                    <a href="#" class="highlight">News</a>
+                    <div class="dropdown">
+                        <a href="#">Events ▾</a>
+                        <div class="dropdown-content">
+                            <a href="#">Hard Fork Decentralized 2019</a>
+                            <a href="#">TNW Conference 2020</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Business ▾</a>
+                        <div class="dropdown-content">
+                            <a href="#">Index</a>
+                            <a href="#">TNW X</a>
+                        </div>
+                    </div>
+                    <a href="#">AMAs</a>
+                    <a href="#">Spaces</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+
+                <div class="navWhite font-Lato uppercase flex-container alignitems-center bold-600 size-14">
+                    <a href="#">Latest</a>
+                    <a href="#">Hard Fork</a>
+                    <a href="#">Plugged</a>
+                    <a href="#">Fundamentals</a>
+                    <a href="#">Work 2030</a>
+                    <div class="flex-container" style="margin-left: auto;">
+                        <button id="searchBtn"><i class="fas fa-search fa-flip-horizontal"></i></button>
+                        <button id="navBars"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <a href="#"><div class="yellowTopBar"><div class="font-Lato size-13">It's Pride Week in Amsterdam <img src="images/pride-logo.svg" class="img-tiny" alt="rainbow flag"> Don't miss our events on diversity &amp; inclusion →</div></div></a>
+            </nav>
+        </header>
+        <main>
+            <!--HEADLINE ARTICLES SECTION-->
+            <section>
+                <h2 class="display-none">Hottest Articles</h2>
+                <div class="flex-container col-1-1 main-article-section pad-5 pad-l-5 pad-r-5 text-white">
+                        <article class="main-article flex-container">
+                            <div class="logo-cover">
+                                <figure><img class="z-2" src="images/tnw-logo.svg" alt="The next web (TNW) Logo" style="width: 50%;position: relative;"></figure>
+                            </div>
+                            <a href="#"><div class="cover-bg"></div></a>
+                            <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                <p class="uppercase font-Saira">Tech</p>
+                                <h2 class="main-article-header"><a href="#">Everything Apple announced at its 2019 iPhone event</a></h2>
+                                <p class="article-by-line">by <a href="#" class="author-link-white">Bryan Clark</a> &nbsp;<i class="far fa-clock"></i> 2 hours ago &nbsp;<i class="fas fa-share-alt"></i> 29</p>
+                            </div>
+                        </article>
+                    <div class="sub-article-section flex-container flex-col pad-0">
+                        <article class="sub-article-2 flex-container">
+                            <a href="#"><div class="cover-bg"></div></a>
+                            <div class="z-2 align-self-end pad-15 lineH-1-2">
+                                <p class="uppercase font-Saira">Gear</p>
+                                <h4 class="sub-article-header"><a href="#">Apple will ship an 18W fast charger with the iPhone 11 Pro and Pro Max</a></h4>
+                                <p class="article-by-line">by <a href="#" class="author-link-white">Ivan Mehta</a> &nbsp;<i class="far fa-clock"></i> 38 minutes ago &nbsp;<span class="d-none-med"><i class="fas fa-share-alt"></i> 0</span></p>
+                            </div>
+                        </article>
+                        <article class="sub-article-3 flex-container">
+                            <a href="#"><div class="cover-bg"></div></a>
+                            <div class="z-2 align-self-end pad-15 lineH-1-2">
+                                <p class="uppercase font-Saira">Gear</p>
+                                <h4 class="sub-article-header"><a href="#">Apple launches the iPhone 11 Pro with triple cameras and hours more battery</a></h4>
+                                <p class="article-by-line">by <a href="#" class="author-link-white">Napier Lopez</a> &nbsp;<i class="far fa-clock"></i> 25 minutes ago &nbsp;<span class="d-none-med"><i class="fas fa-share-alt"></i> 0</span></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!--LATEST NEWS SECTION-->
+            <section>
+                <div class="center max-width-1192 pad-25 margin-top-main">
+                    <a href="#" class="header-link"><h4>Latest news <i class="fas fa-chevron-right size-12"></i></h4></a>
+                    <div class="news-block">
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-1"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">CHEAP: $400 off the 13-inch MacBook Pro is an out-of-the world deal</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Ivan Mehta</a> &#8226; 6 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-2"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing vilt. dais lpa oir aspice prosice</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Carlos Boozooka</a> &#8226; 2 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-3"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel uno dos tres</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Duke Wilson</a> &#8226; 4 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-4"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Steve Minoki</a> &#8226; 3 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-5"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Obi Wan</a> &#8226; 12 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-6"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Ronald McDonnie</a> &#8226; 9 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-7"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel
+                                        </a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Ryan Stevenson</a> &#8226; 2 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block news-bg-8"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit ultricies tristique. Sed justo.</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Oakland Oaks</a> &#8226; 8 hours ago</div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <!--SPECIAL EVENT SECTION-->
+            <section>
+                <div class="center max-width-1192 pad-25 margin-top-main">
+                    <a href="#" class="header-link"><h4>Apple Special Event September 2019 <i class="fas fa-chevron-right size-12"></i></h4></a>
+                    <div class="news-block">
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block event-bg-1"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">How Apple plans to overtake Android cameras with new iPhone 11 features</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Ivan Mehta</a> &#8226; 1 day ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block event-bg-2"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Here's what the iPhone 11 lineup costs in India - and what you can buy instead</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Ivan Mehta</a> &#8226; 1 day ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block event-bg-3"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Apple details its new trade-in program and Watch Studio</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Rachel Kaser</a> &#8226; 2 days ago</div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w">
+                                <a href="#"><div class="article-block event-bg-4"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Everything Apple announced at its 2019 iPhone event</a></h4>
+                                    <div class="article-by-line"><a href="#" class="author-link">Bryan Clark</a> &#8226; 6 days ago</div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+          
+            <!--LATEST FUNDING ROUNDS SECTION-->
+            <section>
+                <div class="center max-width-1192 pad-25 margin-top-main">
+                    <a href="#" class="header-link"><h4>Latest funding rounds on Index.co <i class="fas fa-chevron-right size-12"></i></h4></a>
+                    <div class="funding-block">
+                        <article>
+                            <div class="funding-block-w">
+                                <a href="#" class="position-relative block">
+                                    <img src="images/Funding/AdvisoryMandi.jpg" alt="AvisoryMandi.com Logo" class="funding-img">
+                                    <div class="funding-title"><h4>Advisorymandi.com</h4></div>
+                                    <div class="funding-info">
+                                        <p class="bold font-Roboto-Condensed size-18 margin-b-5">$36M</p>
+                                        <p class="text-mute size-12 font-Saira uppercase">Venture Capital</p>
+                                    </div>
+                                </a>
+                                <div class="funding-invest">
+                                    <p class="margin-b-10"><a href="#" class="block"><i class="fas fa-tag text-black"></i> Investment</a></p>
+                                    <p><a href="#" class="block"><i class="fas fa-briefcase text-black"></i> EST Capital</a></p>
+                                </div>
+                                <div class="pad-15 lineH-1-2">
+                                    <p><a href="#" class="article-by-line text-gray font-Saira size-12">Investing platform AdvisoryMandi raises $36 mn from EST Capital <span class="text-mute">on VCCircle Network</span></a></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="funding-block-w">
+                                <a href="#" class="position-relative block">
+                                    <img src="images/Funding/Spirable.jpg" alt="Spirable Logo" class="funding-img">
+                                    <div class="funding-title"><h4>Spirable</h4></div>
+                                    <div class="funding-info">
+                                        <p class="bold font-Roboto-Condensed size-18 margin-b-5">$6M</p>
+                                        <p class="text-mute size-12 font-Saira uppercase">Series A</p>
+                                    </div>
+                                </a>
+                                <div class="funding-invest">
+                                    <p class="margin-b-10"><a href="#" class="block"><i class="fas fa-tag text-black"></i> Video, +3</a></p>
+                                    <p><a href="#" class="block"><i class="fas fa-briefcase text-black"></i> Frontline Ventures, +4</a></p>
+                                </div>
+                                <div class="pad-15 lineH-1-2">
+                                    <p><a href="#" class="article-by-line text-gray font-Saira size-12">Spirable raises £6m Series A investment <span class="text-mute">on UKTN (UK Tech News)</span></a></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="funding-block-w">
+                                <a href="#" class="position-relative block">
+                                    <img src="images/Funding/Kredivo.jpg" alt="Kredivo Logo" class="funding-img">
+                                    <div class="funding-title"><h4>Kredivo</h4></div>
+                                    <div class="funding-info">
+                                        <p class="bold font-Roboto-Condensed size-18 margin-b-5">$20M</p>
+                                        <p class="text-mute size-12 font-Saira uppercase">Debt Financing</p>
+                                    </div>
+                                </a>
+                                <div class="funding-invest">
+                                    <p class="margin-b-10"><a href="#" class="block"><i class="fas fa-tag text-black"></i> Financial Services</a></p>
+                                    <p><a href="#" class="block"><i class="fas fa-briefcase text-black"></i> Partners for Growth</a></p>
+                                </div>
+                                <div class="pad-15 lineH-1-2">
+                                    <p><a href="#" class="article-by-line text-gray font-Saira size-12">Partners for Growth seals debut Indonesia venture debt deal <span class="text-mute">on AVCJ</span></a></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="d-show-large-b funding-block-w">
+                                <a href="#" class="position-relative block">
+                                    <img src="images/Funding/Therapeudic.png" alt="Sigrid Therapeudics Logo" class="funding-img">
+                                    <div class="funding-title"><h4>Sigrid Therapeutics</h4></div>
+                                    <div class="funding-info">
+                                        <p class="bold font-Roboto-Condensed size-18 margin-b-5">$1.6M</p>
+                                        <p class="text-mute size-12 font-Saira uppercase">SEED FUND</p>
+                                    </div>
+                                </a>
+                                <div class="funding-invest">
+                                    <p class="margin-b-10"><a href="#" class="block"><i class="fas fa-tag text-black"></i> Biotechnology</a></p>
+                                    <p><a href="#" class="block"><i class="fas fa-briefcase text-black"></i> Joyance Partners</a></p>
+                                </div>
+                                <div class="pad-15 lineH-1-2">
+                                    <p><a href="#" class="article-by-line text-gray font-Saira size-12">Sigrid Therapeutics Closes $1.6M Funding Round <span class="text-mute">on FinSMEs</span></a></p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+           <!--POPULAR TOPICS SECTION-->
+            <section>
+                <h2 class="display-none">Popular Topics</h2>
+                <div class="center max-width-1192 pad-25 margin-top-main">
+                    <div class="popular-block">
+                        <article>
+                            <div class="popular-block-w">
+                                <a href="#" class="header-link"><h4>Apps <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-1 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">Google Docs now shows word count as you type (thank god)</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Mix</a> &#8226; 2 days ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Microsoft unveils new To Do as Wunderlist founder mourns its imminent death</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-1"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>Honor's latest app helps the visually impaired read documents and roadsigns</h5></a></article></li>
+                                    <li><article><a href="#"><h5>How to edit Facebook’s list of your presumed interests</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Facebook just launched its Dating service</h5></a></article></li>
+                                    <li><article><a href="#"><h5>PSA: You can use emoji to easily find the right GIF to use on Twitter, WhatsApp, and more</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Facebook leak contained phone numbers for 419 million users</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w popular-block-m-lg popular-block-m-md">
+                                <a href="#" class="header-link"><h4>Gear <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-2 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">Microsoft will livestream its October 2 Surface event, suggesting big reveals</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Napier Lopez</a> &#8226; 17 hours ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">The GoCycle GXi is a futuristic, premium e-bike that folds in 10 seconds</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-2"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>All we know about the ambitious OnePlus smart TV</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Microsoft will livestream its October 2 Surface event, suggesting big reveals</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Fitbit's $199 Versa 2 goes on sale September 15</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Amazon will launch new Alexa hardware on September 25</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Pixel 4 video leaks confirm 90Hz display and the return of the 'panda' color</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w">
+                                <a href="#" class="header-link"><h4>Tech <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-3 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">Attackers actively exploiting 'Simjacker' flaw to steal device data and spy on individuals</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Ravie Lakshmanan</a> &#8226; 8 hours ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Apple's revised policy for kids' apps allows devs to collect anonymized data and display ads</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-3"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>Mozilla begins charging for services — starting with Firefox premium support for enterprises</h5></a></article></li>
+                                    <li><article><a href="#"><h5>France doesn't want Facebook to operate Libra in Europe</h5></a></article></li>
+                                    <li><article><a href="#"><h5>ICE is paying an Israeli security company $30M to break into phones</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Uber won't reclassify drivers as employees, despite California's AB5 ruling (Updated)</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Watch: NASA astronauts build gorgeous zero-gravity fires for science</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w popular-block-m-md">
+                                <a href="#" class="header-link"><h4>Creative <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-4 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">Watch: Disney’s new anti-vibration tech maps CGI movements onto actual robots</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Mix</a> &#8226; 6 weeks ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Chinese vertical dramas made for phone viewing show the future of mobile video</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-1"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>Sorry, but you can’t copyright a meme</h5></a></article></li>
+                                    <li><article><a href="#"><h5>How to edit Facebook’s list of your presumed interests</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Facebook just launched its Dating service</h5></a></article></li>
+                                    <li><article><a href="#"><h5>PSA: You can use emoji to easily find the right GIF to use on Twitter, WhatsApp, and more</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Facebook leak contained phone numbers for 419 million users</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w  popular-block-m-lg">
+                                <a href="#" class="header-link"><h4>Podium <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-5 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">11 Ways Novices Can Start the Process of Learning AI Programming</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Scott Gerber</a> &#8226; 11 hours ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Aliens of extraordinary abilities</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-2"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>A London startup guide for international founders</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Microsoft will livestream its October 2 Surface event, suggesting big reveals</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Fitbit's $199 Versa 2 goes on sale September 15</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Amazon will launch new Alexa hardware on September 25</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Pixel 4 video leaks confirm 90Hz display and the return of the 'panda' color</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w popular-block-m-md">
+                                <a href="#" class="header-link"><h4>Insights <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-6 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">It's possible to monetize data while respecting consumer privacy — here's how</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Camile Charluet</a> &#8226; 9 hours ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Twitter's refusal to dox a cow stymies Republican's $250M lawsuit</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-3"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>Scammers are now selling stolen cash for Bitcoin on the dark web</h5></a></article></li>
+                                    <li><article><a href="#"><h5>France doesn't want Facebook to operate Libra in Europe</h5></a></article></li>
+                                    <li><article><a href="#"><h5>ICE is paying an Israeli security company $30M to break into phones</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Uber won't reclassify drivers as employees, despite California's AB5 ruling (Updated)</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Watch: NASA astronauts build gorgeous zero-gravity fires for science</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w">
+                                <a href="#" class="header-link"><h4>Launch <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-7 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">Pam and Angela from The Office are re-watching the show for their new podcast</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Abhimanyu Ghoshal</a> &#8226; 1 day ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Bethesda wants you to test its game streaming tech with DOOM on iOS this year</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-2"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>Mozilla rolls out new automated crypto-jacking filtering in Firefox</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Microsoft will livestream its October 2 Surface event, suggesting big reveals</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Fitbit's $199 Versa 2 goes on sale September 15</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Amazon will launch new Alexa hardware on September 25</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Pixel 4 video leaks confirm 90Hz display and the return of the 'panda' color</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="popular-block-w popular-block-m-lg popular-block-m-md">
+                                <a href="#" class="header-link"><h4>Distract <i class="fas fa-chevron-right size-12"></i></h4></a>
+                                <article class="popular-main-article popular-bg-8 flex-container">
+                                    <a href="#"><div class="cover-bg"></div></a>
+                                    <div class="z-2 align-self-end pad-10 lineH-1-2">
+                                        <p class="uppercase font-Saira size-12">Most Popular</p>
+                                        <h2 class="popular-main-header"><a href="#">Here's what games I'd be playing if National Video Game Day was a real holiday</a></h2>
+                                        <p class="article-by-line"><a href="#" class="author-link-white">Tristan Greene</a> &#8226; 22 hours ago</p>
+                                    </div>
+                                </article>
+                                <article class="latest-block flex-container flex-space-between">
+                                    <div class="pad-10 lineH-1-2">
+                                        <p class="font-Saira size-12">LATEST</p>
+                                        <h4 class="font-Roboto-Condensed size-16"><a href="#">Nintendo debuts Ring Fit Adventure, the Switch's answer to Wii Fit</a></h4>
+                                    </div>
+                                    <div class="latest-bg latest-bg-3"></div>
+                                </article>
+                                <div class="pad-10">
+                                <ul class="article-list">
+                                    <li><article><a href="#"><h5>Oh yeah, EA's working on a cloud gaming service too</h5></a></article></li>
+                                    <li><article><a href="#"><h5>France doesn't want Facebook to operate Libra in Europe</h5></a></article></li>
+                                    <li><article><a href="#"><h5>ICE is paying an Israeli security company $30M to break into phones</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Uber won't reclassify drivers as employees, despite California's AB5 ruling (Updated)</h5></a></article></li>
+                                    <li><article><a href="#"><h5>Watch: NASA astronauts build gorgeous zero-gravity fires for science</h5></a></article></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--LATEST DEALS SECTION-->
+            <section>
+                <div class="center max-width-1192 pad-25 margin-top-main">
+                    <a href="#" class="header-link"><h4>Latest deals <i class="fas fa-chevron-right size-12"></i></h4></a>
+                    <div class="news-block">
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">89% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-1"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">12min Book Summary Library: Lifetime Premium Subscription</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$346.50</span> <span class="size-22 text-dark">$39</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">90% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-2"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Microsoft Excel Data Analysis &amp; Dashboard Reporting</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$200</span> <span class="size-22 text-dark">$19.99</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">80% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-3"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Icon54: Unlimited Membership</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$97</span> <span class="size-22 text-dark">$19</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">94% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-4"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">The Complete Excel Pro Tips Certification Bundle</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$294</span> <span class="size-22 text-dark">$19</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">98% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-5"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">The Complete SQL Database in Python Bundle</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$1000</span> <span class="size-22 text-dark">$19</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">97% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-6"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">The Mastering Tableau Certification Bundle</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$770</span> <span class="size-22 text-dark">$25</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">92% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-7"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">KeepSolid VPN Unlimited: Lifetime Subscription</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$499.99</span> <span class="size-22 text-dark">$39</span></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="article-block-w position-relative">
+                                <div class="deals-cover"><div class="deals-text">97% off</div></div>
+                                <a href="#"><div class="deals-block deals-bg-8"></div></a>
+                                <div class="inline-block vert-align-top aside-title">
+                                    <h4 class="news-article-title"><a href="#">Project Management Professional Certification Training Suite</a></h4>
+                                    <div class="article-by-line"><span class="text-strikeout">$1248</span> <span class="size-22 text-dark">$39</span></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <section>
+            <h2 class="display-none">Footer</h2>
+            <!--SOCIAL MEDIA SECTION-->
+            <section>
+                <h2 class="display-none">Social Media &amp; Event Links</h2>
+                <div class="footer-links">
+                    <div class="social-media flex-container">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fas fa-rss"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!--Copyright FOOTER SECTION-->
+            <section>
+                <h2 class="display-none">Copyright</h2>
+                <div class="copyright-section">
+                    <a href="#"><img src="images/tnw-logo.svg" alt="The Next Web's logo" style="width: 40px;"></a> © 2006–2019 The Next Web B.V. <span class="new-line-mobile">Made with <span class="text-red">♥</span> in Amsterdam.</span> <span class="new-line-mobile">Powered by <a href="#"><img src="images/stackpath.svg" alt="StackPath's logo" style="width: 70px;"></a></span>
+                </div>
+            </section>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  font-size: 1em;
+  background-color: black;
+  min-width: 220px;
+  left: -10px;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  z-index: 12;
+}
+
+.dropdown-content a {
+  color: #888;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:first-child { padding-top: 12px; }
+
+.dropdown:hover .dropdown-content { display: block; opacity: 1; }
