@@ -7,7 +7,7 @@ You can find the original project specification at: https://www.theodinproject.c
 ![](images/img2.png)
 ![](images/img3.png)
 
-## [Live Link](https://raw.githack.com/Aaron-RN/BUILDING-WITH-RESPONSIVE-DESIGN/master/index.html)
+### [Live Demo Link](https://raw.githack.com/Aaron-RN/BUILDING-WITH-RESPONSIVE-DESIGN/master/index.html)
 
 ## Built With
 
