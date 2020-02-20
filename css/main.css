@@ -469,8 +469,9 @@ h4 {
 }
 
 #navLinks { overflow: visible; }
-#navBars { padding: 0 15px; font-size: 18px; color: orangered; border-left: 1px lightgray solid; }
-#searchBtn { padding: 0 15px; font-size: 16px; color: lightgray; border-left: 1px lightgray solid; }
+#navBars { padding: 10px 15px; font-size: 14px; color: orangered; border-left: 1px lightgray solid; }
+.navFaBars { font-size: 18px; color: orangered; cursor: pointer; }
+#searchBtn { padding: 0 15px; font-size: 16px; color: lightgray; border-left: 1px lightgray solid; cursor: pointer;}
 #searchBtn:hover { color: gray; }
 
 [class*="col"] {
