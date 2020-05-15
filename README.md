@@ -17,7 +17,7 @@ You can find the original project specification at: https://www.theodinproject.c
 
 👤 **Aaron Rory**
 
-- Github: [@Aaron-RN](https://github.com/Aaron-RN)
+- GitHub: [@Aaron-RN](https://github.com/Aaron-RN)
 - Twitter: [@ARNewbold](https://twitter.com/ARNewbold)
 - Linkedin: [Aaron Newbold](https://www.linkedin.com/in/aaron-newbold-1b9233187/)
 
