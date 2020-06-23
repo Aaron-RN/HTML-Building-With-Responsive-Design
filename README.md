@@ -1,5 +1,5 @@
 # Building with Responsive Design
-In this project, I built a responsive website. The website I built was The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced. 
+In this project, I built a clone of a responsive website. The website I re-built was The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced. 
 
 ![](images/img1.png)
 ![](images/img2.png)
